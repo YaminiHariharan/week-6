@@ -9,34 +9,12 @@ In particular, we'll cover the following topics:
 - Classes
 - Multiprocessing
 
-## Setup
+## setup
+
+*(As of January 2026)*
 
 1. [Fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#forking-a-repository) this repository.
-2. This week, you will be saving a **.env** file that will be *ignored* by git. For this reason, you might find it safest to [clone](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git#_clone-a-repository-locally) your fork of the weekly repository, and work locally on VS Code instead of on a codespace.
-   - *Note: if you do this, you'll need to [create an environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) using the **environment.yml** text, below.*
-3. (Optional) You are still welcome to [create a Codespace](https://docs.github.com/en/codespaces/developing-in-a-codespace/creating-a-codespace-for-a-repository#creating-a-codespace-for-a-repository) for your repository; just make sure to save your **.env** file somewhere safe in case you need to restart the codespace.
-4. Save (or upload) the .env file shared with you on Canvas. This is needed to run the lab notebook.
-5. Once you're ready, [commit and push](https://docs.github.com/en/codespaces/developing-in-a-codespace/using-source-control-in-your-codespace#committing-your-changes) your final changes to your repository. *Note: You can also make quick edits using the [GitHub Dev Editor](https://docs.github.com/en/codespaces/the-githubdev-web-based-editor#opening-the-githubdev-editor).*
-
-## Packages Available:
-
-The environment for this week is built with the following environment.yml:
-
-```yml
-name: week-6
-dependencies:
-  - python=3.11
-  - pip
-  - pip:
-    - ipykernel  # for Jupyter Notebook
-    - streamlit
-    - seaborn
-    - pandas
-    - joblib
-    - numpy
-    - python-dotenv
-    - requests
-    - tqdm
-```
-
-*Note: you are welcome to install more packages in your codespace, but they will not be used by the autograder.*
+2. Clone this repository using [VS Code](https://code.visualstudio.com/docs/sourcecontrol/quickstart) or using [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository).
+3. See the [environment.yml](./environment.yml) file. Create this environment locally using `conda env create -f environment.yml` and load it, or use an existing environment that already has these packages installed.
+4. This week, you will be saving a **.env** file that will be *ignored* by git. Save the .env file shared with you on Canvas into the repository folder. This is needed to run the lab notebook.
+5. Edit your repository, commit as you go, and push your changes to your fork.
