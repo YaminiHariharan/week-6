@@ -59,5 +59,7 @@ class Genius:
                 "followers_count": artist_data.get("followers_count"),
             }
 
-
+        
+        results.append(row)
+        
         return pd.DataFrame(results)
