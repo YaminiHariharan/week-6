@@ -1,4 +1,4 @@
-name: week-6
+name: h501-main
 dependencies:
   - python=3.11
   - pip
