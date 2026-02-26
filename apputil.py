@@ -8,6 +8,7 @@ class Genius:
     def __init__(self, access_token):
         self.access_token = access_token
         self.base_url = "https://api.genius.com"
+        self.headers = { "Authorization": "Bearer " + self.access_token }
 
 
     def get_artist(self, search_term):
@@ -58,6 +59,5 @@ class Genius:
                 "followers_count": artist_data.get("followers_count"),
             }
 
-            results.append(row)
 
         return pd.DataFrame(results)
