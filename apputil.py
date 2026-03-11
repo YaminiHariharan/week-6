@@ -19,9 +19,9 @@ class Genius:
         # Search for the artist name
         search_url = f"{self.base_url}/search"
         search_response = requests.get(
-            search_url,
-            headers=self.headers,
-            params={"q": search_term},
+        search_url,
+        headers=self.headers,
+        params={"q": search_term},
         )
 
         search_data = search_response.json()
@@ -58,8 +58,7 @@ class Genius:
                 "artist_id": artist_data.get("id"),
                 "followers_count": artist_data.get("followers_count"),
             }
-
-        
-        results.append(row)
+            
+            results.append(row)
         
         return pd.DataFrame(results)
